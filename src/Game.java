@@ -14,33 +14,33 @@ public class Game {
             String realChoice = scanner.nextLine();
             switch (realChoice) {
                 case "1":
-                    AIchoice = random.nextInt(2);
+                    AIchoice = random.nextInt(3);
                     if(AIchoice == 0) {
                         System.out.print("AI chooses rock\nIt's a draw!\n");
                     } else if (AIchoice == 1) {
                         System.out.print("AI chooses paper\nAI gets a point!\n");
                         AIscore++;
                     } else {
-                        System.out.print("AI chooses rock\nYou get a point!\n");
+                        System.out.print("AI chooses scissors\nYou get a point!\n");
                         userScore++;
                     }
                     System.out.println("The score is: \nYou: " + userScore + "\nAI: " + AIscore);
                     break;
                 case "2":
-                    AIchoice = random.nextInt(2);
+                    AIchoice = random.nextInt(3);
                     if(AIchoice == 0) {
                         System.out.print("AI chooses rock\nYou get a point!\n");
                         userScore++;
                     } else if (AIchoice == 1) {
                         System.out.print("AI chooses paper\nIt's a draw!\n");
                     } else {
-                        System.out.print("AI chooses rock\nAI gets a point!\n");
+                        System.out.print("AI chooses scissors\nAI gets a point!\n");
                         AIscore++;
                     }
                     System.out.println("The score is: \nYou: " + userScore + "\nAI: " + AIscore);
                     break;
                 case "3":
-                    AIchoice = random.nextInt(2);
+                    AIchoice = random.nextInt(3);
                     if(AIchoice == 0) {
                         System.out.print("AI chooses rock\nAI gets a point!\n");
                         AIscore++;
@@ -48,7 +48,7 @@ public class Game {
                         System.out.print("AI chooses paper\nYou get a point!\n");
                         userScore++;
                     } else {
-                        System.out.print("AI chooses rock\nIt's a draw!\n");
+                        System.out.print("AI chooses scissors\nIt's a draw!\n");
                     }
                     System.out.println("The score is: \nYou: " + userScore + "\nAI: " + AIscore);
                     break;
