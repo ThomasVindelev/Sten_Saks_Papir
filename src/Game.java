@@ -5,7 +5,7 @@ public class Game {
 
     public void playGame(Scanner scanner) {
         Random random = new Random();
-        int AIchoice = 0;
+        int AIchoice;
         boolean isOver = false;
         byte userScore = 0;
         byte AIscore = 0;

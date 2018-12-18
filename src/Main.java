@@ -14,6 +14,7 @@ public class Main {
             if (choice.equals("1")) {
                 game.playGame(scanner);
             } else {
+                System.out.println("Closing game...");
                 endApp = true;
             }
         }
